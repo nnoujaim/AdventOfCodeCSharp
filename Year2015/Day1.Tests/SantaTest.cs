@@ -1,6 +1,6 @@
-using Day1.Magical;
+using Year2015.Day1.Magical;
 
-namespace Day1.Tests;
+namespace Year2015.Day1.Tests;
 
 public class SantaTest
 {

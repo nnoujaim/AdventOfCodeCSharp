@@ -1,9 +1,8 @@
-using Day2.Presents;
+using Year2015.Day2.Presents;
 using Xunit;
 using System.Collections.Generic;
 
-namespace Day2.Tests;
-
+namespace Year2015.Day2.Tests;
 
 public class PresentsTest
 {
