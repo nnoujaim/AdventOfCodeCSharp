@@ -1,5 +1,4 @@
-namespace Year2015.Day2.Presents;
-
+namespace Year2015.Day2;
 
 public class PresentCollection
 {
@@ -59,25 +58,29 @@ public class Present
         var lw = DimList[0] * DimList[1];
         var wh = DimList[1] * DimList[2];
         var hl = DimList[2] * DimList[0];
-        var smallest = GetSmallest();
+        var smallest = GetSmallest(new List<int> {lw, wh, hl});
         return 2 * lw + 2 * wh + 2 * hl + smallest;
     }
 
     public int GetTotalRibbonLength()
     {
         // Equation = smallest + smallest + middle + middle + (l * w * h)
-        var smallest = GetSmallest();
-        var middle = GetMiddle();
+        var smallest = GetSmallest(DimList);
+        var middle = GetMiddle(DimList);
         return smallest * 2 + middle * 2 + DimList[0] * DimList[1] * DimList[2];
     }
 
-    public int GetSmallest()
+    public int GetSmallest(List<int> input)
     {
-        return DimList[0];
+        List<int> sorted = new List<int>(input);
+        sorted.Sort();
+        return sorted[0];
     }
 
-    public int GetMiddle()
+    public int GetMiddle(List<int> input)
     {
-        return DimList[1];
+        List<int> sorted = new List<int>(input);
+        sorted.Sort();
+        return sorted[1];
     }
 }

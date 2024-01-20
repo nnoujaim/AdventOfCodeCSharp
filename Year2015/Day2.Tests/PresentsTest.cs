@@ -1,5 +1,4 @@
-using Year2015.Day2.Presents;
-using Xunit;
+using Year2015.Day2;
 using System.Collections.Generic;
 
 namespace Year2015.Day2.Tests;

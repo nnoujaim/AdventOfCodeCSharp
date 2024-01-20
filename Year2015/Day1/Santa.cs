@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace Year2015.Day1.Magical;
+namespace Year2015.Day1;
 
 public class Santa
 {

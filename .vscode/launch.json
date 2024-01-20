@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Day3Tests",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_day3_tests",
+            "program": "${workspaceFolder}/Year2015/Day3.Tests/bin/Debug/net8.0/Day3.Tests.dll",
+            "args": ["--filter", "${workspaceFolder}/Year2015/Day3.Tests/Day3.Tests.csproj"],
+            "cwd": "${workspaceFolder}/Year2015/Day3.Tests",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        },
+        {
+            "name": "Day3",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_day3_and_tests",
+            "program": "${workspaceFolder}/Year2015/Day3/bin/Debug/net8.0/Day3.dll",
+            "args": ["${input:Day3Args}"],
+            "cwd": "${workspaceFolder}/Year2015/Day3",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        }
+    ],
+    "inputs": [
+        {
+            "id": "Day3Args",
+            "type": "promptString",
+            "description": "Enter Santas path and wrap it in quotes like \"<<>>vv^^\"",
+            "default": "2 <><>^v^v"
+        }
+    ]
+}

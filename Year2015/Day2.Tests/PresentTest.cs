@@ -1,5 +1,4 @@
-using Year2015.Day2.Presents;
-using Xunit;
+using Year2015.Day2;
 
 namespace Year2015.Day2.Tests;
 

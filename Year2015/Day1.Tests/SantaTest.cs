@@ -1,4 +1,4 @@
-using Year2015.Day1.Magical;
+using Year2015.Day1;
 
 namespace Year2015.Day1.Tests;
 

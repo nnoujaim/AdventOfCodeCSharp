@@ -1,4 +1,6 @@
-﻿using Year2015.Day2.Presents;
+﻿using Year2015.Day2;
+
+namespace Year2015.Day2;
 
 class Program
 {
