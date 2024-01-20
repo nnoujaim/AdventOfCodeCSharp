@@ -1,3 +1,5 @@
+using Year2015.Day3;
+
 namespace Year2015.Day3.Tests;
 
 public class ElfCommandTest
